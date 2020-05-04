@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <title>Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <style>
+      li {
+        margin-bottom: 10px
+      }
+    </style>
   </head>
   <body>
   <main>
@@ -12,18 +17,54 @@
         <div class="stackable grid">
           <div class="row">
             <div class="three wide center aligned column">
-              <!-- Avatar -->
+              <div class="avatar-wrapper">
+                <object class="avatar" data="./assets/images/trump.svg" role="img" aria-label="My profile picture"></object>
+              </div>
             </div>
             <div class="thirteen wide column">
               <div class="stackable grid">
                 <div class="sixteen wide column">
-                  <!-- Name, job, contacts -->
+                  <h1 class="name">Donald Trump</h1>
+                  <div class="job">President of United States of America</div>
+                  <ul class="contacts">
+                    <li>
+                      <a href="https://www.fb.com/DonaldTrump" rel="author" class="facebook">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"/></svg>
+                        <span>DonaldTrump</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="mailto:realDonaldTrump@whitehouse.gov" rel="author" class="mail">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path
+                                  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                          </path>
+                        </svg>
+                        <span>realDonaldTrump@whitehouse.gov</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="tel:+380952600797" rel="author" class="phone">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
+                        <span>+13579437649 </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/realDonaldTrump" rel="author" class="twitter">
+
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16px" height="16px"><path d="M 24 4.300781 C 23.101563 4.699219 22.199219 5 21.199219 5.101563 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601563 C 19.300781 2.601563 18 2 16.601563 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101563 5.898438 1.699219 2.898438 C 1.199219 3.601563 1 4.5 1 5.398438 C 1 7.101563 1.898438 8.601563 3.199219 9.5 C 2.398438 9.398438 1.601563 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101563 14 3.601563 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101563 17.300781 7.300781 17.300781 C 5.601563 18.601563 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601563 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101563 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781"/></svg>
+                        <span>https://twitter.com/realDonaldTrump</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="sixteen wide mobile only column">
                   <div class="divider"></div>
                 </div>
                 <div class="sixteen wide column">
-                  <!-- Intro -->
+                  <h2>Résumé</h2>
+                  <p>&mdash; I'm the most successful person ever to run for the presidency, by far. Nobody's ever been more successful than me. I'm the most successful person ever to run. Ross Perot isn't successful like me. Romney &mdash; I have a Gucci store that's worth more than Romney. Sorry losers and haters, but my IQ is one of the highest &mdash; and you all know it! Please don't feel so stupid or insecure, it's not your fault.</p>
                 </div>
               </div>
             </div>
@@ -35,7 +76,219 @@
           </div>
           <div class="row">
             <div class="ten wide column">
-              <!-- Experience -->
+              <div class="ten wide column">
+                  <ul class="timeline">
+                    <li class="details">
+                      <input type="checkbox" id="experience">
+                      <label for="experience" class="summary"><h3>Experience</h3></label>
+                      <div>
+                        <ul>
+                          <li>
+                            <p><h5>2017</h5></p>
+                            <p>Became 45th president of the United States </p>
+                          </li>
+
+                          <li>
+                            <p><h5>2016</h5></p>
+                            <p>Won election race with 77 votes more than Clinton, yippe-kee-yay!</p>
+                          </li>
+
+                          <li>
+                            <p><h5>2015</h5></p>
+                            <p>Became the most important Republican nominating for presidential election run</p>
+                          </li>
+
+                          <li>
+                            <p><h5>2009</h5></p>
+                            <p>Changed my mind and became Republican again</p>
+                          </li>
+
+                          <li>
+                            <p><h5>2005</h5></p>
+                            <p>Started Trump University with Michael Sexton and Jonathan Spitalny: no grades,
+                              certificates and other bureaucracy, but program offered courses in real estate,
+                              asset management entrepreneurship, and wealth creation. 98% students gave positive
+                              reviews while studying, however some of these ungrateful gringos filed lawsuits
+                              against Trump University after the course. I had to pay $25 million to settle
+                              that...</p>
+                          </li>
+
+                          <li>
+                            <p><h5>2002</h5></p>
+                            <p>Acquired the former Hotel Delmonico, which was renovated and reopened in 2004 as the
+                              Trump Park Avenue. I sure do like my surname!</p>
+                          </li>
+
+                          <li>
+                            <p><h5>2001</h5></p>
+                            <p>Completed Trump World Tower and joined the Democratic Party </p>
+                          </li>
+
+                          <li>
+                            <p><h5>1999</h5></p>
+                            <p>Started buying golf courses. They are very cheap, I have 18 of them now in USA and
+                              abroad! Also switched to the Reform Party that year</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1997</h5></p>
+                            <p>Began a multi-building development along the Hudson River, which was named Trump
+                              Place. Me and the other investors sold our shares for $1.8 billion and that was then
+                              the biggest residential sale in the history of New York City</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1996</h5></p>
+                            <p>Acquired the Bank of Manhattan Trust Building, which was a vacant seventy-one story
+                              skyscraper on Wall Street. After an extensive renovation, the high-rise was renamed
+                              the Trump Building </p>
+                          </li>
+
+                          <li>
+                            <p><h5>1994</h5></p>
+                            <p>Refurbished the Gulf and Western Building on Columbus Circle, turned it into a
+                              44-story luxury property known as Trump International Hotel and Tower</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1989 ― 1992</h5></p>
+                            <p>Ran a second hand airline called Trump Shuttle. What a waste of money, I had to sell
+                              it, now it is American Airlines Shuttle, btw </p>
+                          </li>
+
+                          <li>
+                            <p><h5>1989, 1990</h5></p>
+                            <p>Learned about Tour de France and decided to hold my very own Tour de Trump. Is
+                              America not great enough for that cycling competition? </p>
+                          </li>
+
+                          <li>
+                            <p><h5>1988</h5></p>
+                            <p>Acquired the Plaza Hotel in Manhattan for $407 million, invested $50 million to
+                              restore the building and boosted it from three-star to four-star hotel (I called it
+                              "the Mona Lisa" and sold it for a lot of cash in 1995)</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1987</h5></p>
+                            <p>Registered as a Republican</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1985</h5></p>
+                            <p>I bought the Mar-a-Lago estate in Palm Beach and turned it into a private club.You
+                              can join if you pay $200K initiation fee (and there is another annual fee for
+                              members, it is very expensive to be rich). That year I also opened a casino called
+                              Trump Castle. My wife Ivana became a manager, because she is another Trump!</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1983</h5></p>
+                            <p>I purchased New Jersey Generals, an American football team. I changed team's play
+                              schedule and filed an antitrust lawsuit against United States Football League, so
+                              NJG are not doing so good now, but back then they were great! </p>
+                          </li>
+
+                          <li>
+                            <p><h5>1980</h5></p>
+                            <p>Started developing the Trump Tower skyscraper in Manhattan</p>
+                            <ul>
+                              <li>Payed a crew of undocumented Polish workers to demolish the historic Bonwit
+                                Teller store, including art deco features.
+                              </li>
+                              <li>Architectural critic Paul Goldberger said in 1983 that the tower's atrium is
+                                "the most pleasant interior public space to be completed in New York in some
+                                years".
+                              </li>
+                              <li>A repair job started on the Wollman Rink in Central Park and completed the work
+                                in three months for $1.95 million, which was $775,000 less than the initial
+                                budget!
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <p><h5>1978</h5></p>
+                            <p>Purchased a 50 percent stake in the derelict Commodore Hotel and turned it into the
+                              Grand Hyatt Hotel in 2 years of remodeling</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1971</h5></p>
+                            <p>Was promoted to president of the company and renamed it The Trump Organization</p>
+                          </li>
+
+                          <li>
+                            <p><h5>1968</h5></p>
+                            <p>Began my career at my father's real estate development company, Elizabeth Trump &
+                              Son</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                </ul>
+
+                <ul class="timeline">
+                  <li class="details">
+                    <input type="checkbox" id="personal-life">
+                    <label for="personal-life" class="summary"><h3>Personal life</h3></label>
+                    <div>
+                      <ul>
+                        <li>
+                          <p><h5>2006</h5></p>
+                          <p>Melania gained United States citizenship and gave birth to our son, Barron</p>
+                        </li>
+
+                        <li>
+                          <p><h5>2005</h5></p>
+                          <p>Married her</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1998</h5></p>
+                          <p>Met my future third wife, Melania Knauss</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1999</h5></p>
+                          <p>Divorced Marla ¯\_(ツ)_/¯</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1993</h5></p>
+                          <p>Married Marla and had a daughter, we named her Tiffany, because I like Tiffany &
+                            Company jewellery as well</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1992</h5></p>
+                          <p>Started affair with Marla Maples, so I had to divorce. God knows I love nice women, I
+                            love them all!</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1984</h5></p>
+                          <p>Birth of Eric Trump</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1982</h5></p>
+                          <p>Birth of Ivanka Trump</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1977</h5></p>
+                          <p>My first son is born. I called him Donald, of course!</p>
+                        </li>
+
+                        <li>
+                          <p><h5>1977</h5></p>
+                          <p>Married Czech model Ivana Zelníčková</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
             </div>
             <div class="six wide column">
               <!-- Languages -->
